@@ -12,6 +12,7 @@ function ImageUploader() {
         reader.onloadend = function() {
           setImgBase64(reader.result)
         }
+        reader.readAsDataURL(file)
       }
     
     function postImage(url, imgSrc) {
